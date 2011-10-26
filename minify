@@ -1,0 +1,14 @@
+#! /usr/bin/ruby
+# Requires closure-compiler gem and ruby
+require 'rubygems'
+require 'closure-compiler'
+JS = "../js/jquery.popovers.js"
+JS_MIN = "../js/jquery.popovers.min.js"
+
+closure = Closure::Compiler.new(:compilation_level => 'ADVANCED_OPTIMIZATIONS')
+input_path = File.expand_path(JS, __FILE__)
+output_path = File.expand_path(JS_MIN, __FILE__)
+
+File.open(output_path, 'w') { |f| f.write closure.compile(File.open(input_path, 'r')) }
+
+puts "Minified : #{input_path} into #{output_path}"

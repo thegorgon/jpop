@@ -1,0 +1,67 @@
+Awesome jQuery Popovers!
+====================
+
+jPop is jQuery plugin for making iPad style popovers. The plugin comes with a default skin modeled off the iPad style, but the popovers can be skinned with images to any style.
+
+Using Popovers
+------------
+
+Let's say you have some hidden div on a page. Let's assume you want this div to be displayed in a popover when an anchor tag is clicked on your page. To achieve this, just add some HTML5 `data-` attributes to your anchor tag :
+
+    <a href="/default/action" data-popover="#jquery-selector">Click</a>
+    
+And then in your page initialization javascript call :
+
+    jQuery.popover.bind();
+  
+And we'll take care of the rest. How easy!
+
+Let's say you want a little more control. Maybe you want the popover to be positioned above or below your anchor instead of to the left or right? Maybe you want the popovers to be fixed in a specific position? Maybe you want a title on your popover? Well, you're in luck! Just add a couple more attributes to your anchor :
+
+`data-popover-title`: Add a title to your popover. Will add the `titled` class to your popover html so you can style appropriately. Or just use the default styles. Those work too.
+
+`data-popover-pos`: Anchor your popover in one place. Formatted `{left or right},{top or bottom}`. If you want one dimension to be flexible, just leave it out and we'll move the popover in that dimension to keep it on screen. 
+
+`data-popover-orient`: By default popovers are oriented "horizontally", that is to the left or right of the popover. Set this to "vertical", or "vertically" (or really any word starting with a "v", "variable" will work) and we'll orient the popover vertically.
+
+Global Settings
+------------
+
+There are a couple "global" settings that help you customize your popovers. You can customize them by calling `jQuery.popover.settings(newSettings)`.
+
+`padding`: How close to the edge of the window can the popovers get before we move them? Default is `15px`.
+
+`appendTo': What should the popovers be appended to? A jQuery selector. Default is `'body'`.
+
+`html`: What is the HTML for the popover? I wouldn't change this, but hey...it's up to you. It's got a big default.
+
+Standalone JavaScript usage
+------------
+
+You say : "But I don't want to use your fancy attributes. I want to do it myself!"
+
+Ok, fine! There's a couple methods defined to allow you to do this :
+
+`jQuery.popover.init(title, content)` : Creates popover HTML with the given title and contents, appends it to the DOM, resizes it, and returns the HTML.
+
+`jQuery.popover.reveal(trigger, popover, options)` : Shows the popover HTML on the given trigger. Options are passed onto the `resize` and `position` methods.
+
+`jQuery.popover.hide(trigger, popover, options)` : Hides the given popover jQuery objects on the given trigger. If no trigger or popover are given, all triggers and popovers are affected. Send in a `complete` function in the options and it will be called when everything is hidden with the popover jQuery object set to `this`
+
+`jQuery.popover.remove(trigger, popover)`  : Hides then removes the popover.
+
+`jQuery.popover.resize(popover, content, options)` : Resize the popover the fit the new content. If the options `animate` or `animateT` are set the popover will animate the size change over a duration of `animateT` milliseconds (default period is 250 if only `animate` is set);
+
+`jQuery.popover.position(trigger, popover, options)` : Position the popover relative to the trigger. The option `orient` acts like `data-popover-orient` and the option `pos` acts like `data-popover-pos`.
+
+Events
+------------
+
+On popover reveal we trigger a `popoverReveal` event on the trigger. Similarly, on hide we trigger a `popoverHide`, on remove we trigger `popoverRemove`, on position we trigger `popoverPosition`. For all of these events the attributes `popover`, `content`, and `options` are set as appropriate. For the `resize` event, as no trigger is necessary, we trigger the event on `window`.
+
+Random Stuff
+------------
+
+Want something? Please let me know! You can find me at (the gorgon lab)[http://www.thegorgonlab.com]
+
+Many thanks to (Niels Gabel)[http://nielsbot.com] who helped a lot with the design of these. 

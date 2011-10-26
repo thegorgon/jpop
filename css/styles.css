@@ -1,0 +1,269 @@
+.popover {
+  position: relative;
+  min-width: 120px;
+  min-height: 85px; }
+  .popover.permanent .bgl .bpad, .popover.permanent .bgr .bpad {
+    top: 0px; }
+  .popover.titled {
+    min-height: 80px; }
+    .popover.titled .hd {
+      height: 65px;
+      padding-bottom: 10px; }
+      .popover.titled .hd .title {
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        text-shadow: black 0px -1px 0px;
+        font-size: 15px;
+        line-height: 20px;
+        top: 33px;
+        bottom: 10px;
+        z-index: 3;
+        color: #fff;
+        font-weight: bold;
+        display: block; }
+      .popover.titled .hd .lft {
+        height: 75px;
+        background: transparent url("/images/popover/grysprite.png") no-repeat 13px 9px; }
+      .popover.titled .hd .rt {
+        height: 75px;
+        background: transparent url("/images/popover/grysprite.png") no-repeat 0px -73px; }
+      .popover.titled .hd .pad {
+        height: 75px;
+        background: transparent url("/images/popover/titled_hdpad1x75.png") repeat-x top center; }
+      .popover.titled .hd .arr {
+        height: 75px;
+        background: transparent url("/images/popover/grysprite.png") no-repeat 0px -421px; }
+    .popover.titled .bd {
+      top: 60px; }
+      .popover.titled .bd .bgl, .popover.titled .bd .bgr {
+        top: 15px; }
+  .popover.arrowlfttp .bd .bgl .tpad {
+    height: 0px; }
+  .popover.arrowlfttp .bd .bgl .arr {
+    top: 0px;
+    height: 40px; }
+  .popover.arrowlfttp .bd .bgl .bpad {
+    top: 40px; }
+  .popover.arrowlftbtm .bd .bgl .tpad {
+    height: auto;
+    bottom: 40px; }
+  .popover.arrowlftbtm .bd .bgl .arr {
+    bottom: 0px;
+    height: 40px; }
+  .popover.arrowlftbtm .bd .bgl .bpad {
+    height: 0px; }
+  .popover.arrowrttp .bd .bgr .tpad {
+    height: 0px; }
+  .popover.arrowrttp .bd .bgr .arr {
+    top: 0px;
+    height: 40px; }
+  .popover.arrowrttp .bd .bgr .bpad {
+    top: 40px; }
+  .popover.arrowrtbtm .bd .bgr .tpad {
+    height: auto;
+    bottom: 40px; }
+  .popover.arrowrtbtm .bd .bgr .arr {
+    bottom: 0px;
+    height: 40px; }
+  .popover.arrowrtbtm .bd .bgr .bpad {
+    height: 0px; }
+  .popover.arrowtplft .hd .lpad.pad {
+    width: 0px; }
+  .popover.arrowtplft .hd .rpad.pad {
+    width: auto;
+    left: 80px;
+    right: 40px; }
+  .popover.arrowtplft .hd .arr {
+    right: auto;
+    width: 40px;
+    left: 40px; }
+  .popover.arrowtprt .hd .rpad.pad {
+    width: 0px; }
+  .popover.arrowtprt .hd .lpad.pad {
+    width: auto;
+    left: 40px;
+    right: 80px; }
+  .popover.arrowtprt .hd .arr {
+    left: auto;
+    width: 40px;
+    right: 40px; }
+  .popover.arrowbtmlft .ft .lpad.pad {
+    width: 0px; }
+  .popover.arrowbtmlft .ft .rpad.pad {
+    width: auto;
+    left: 80px;
+    right: 40px; }
+  .popover.arrowbtmlft .ft .arr {
+    right: auto;
+    width: 40px;
+    left: 40px; }
+  .popover.arrowbtmrt .ft .rpad.pad {
+    width: 0px; }
+  .popover.arrowbtmrt .ft .lpad.pad {
+    width: auto;
+    left: 40px;
+    right: 80px; }
+  .popover.arrowbtmrt .ft .arr {
+    left: auto;
+    width: 40px;
+    right: 40px; }
+  .popover .hd {
+    z-index: 11;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 30px;
+    padding-bottom: 0px; }
+    .popover .hd .title {
+      display: none; }
+    .popover .hd .lft {
+      width: 40px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 60px;
+      background: transparent url("/images/popover/grysprite.png") no-repeat 13px -155px; }
+    .popover .hd .pad {
+      position: absolute;
+      top: 0px;
+      height: 40px;
+      background: transparent url("/images/popover/hdpad1x40.png") repeat-x top center; }
+      .popover .hd .pad.lpad {
+        width: auto;
+        left: 40px;
+        right: 40px; }
+      .popover .hd .pad.rpad {
+        width: 0px;
+        right: 40px; }
+    .popover .hd .arr {
+      width: 0px;
+      max-width: 40px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 40px;
+      background: transparent url("/images/popover/grysprite.png") no-repeat 0px -510px; }
+    .popover .hd .rt {
+      width: 40px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 60px;
+      background: transparent url("/images/popover/grysprite.png") no-repeat 0px -223px; }
+  .popover .bd {
+    padding: 0;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 25px; }
+    .popover .bd .bgl {
+      position: absolute;
+      left: 0px;
+      top: 35px;
+      bottom: 25px;
+      width: 40px;
+      bottom: 25px;
+      z-index: 100; }
+      .popover .bd .bgl .tpad {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        height: 0px;
+        background: transparent url("/images/popover/lftpad40x1.png") repeat-y top center; }
+      .popover .bd .bgl .arr {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        height: 0px;
+        max-height: 40px;
+        background: transparent url("/images/popover/grysprite.png") no-repeat 2px -303px; }
+      .popover .bd .bgl .bpad {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background: transparent url("/images/popover/lftpad40x1.png") repeat-y top center;
+        bottom: 0px;
+        height: auto; }
+    .popover .bd .bgr {
+      position: absolute;
+      top: 35px;
+      right: 0px;
+      width: 40px;
+      bottom: 25px;
+      z-index: 100; }
+      .popover .bd .bgr .tpad {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        height: 0px;
+        background: transparent url("/images/popover/rtpad40x1.png") repeat-y top center; }
+      .popover .bd .bgr .arr {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        height: 0px;
+        max-height: 40px;
+        background: transparent url("/images/popover/grysprite.png") no-repeat 5px -360px; }
+      .popover .bd .bgr .bpad {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background: transparent url("/images/popover/rtpad40x1.png") repeat-y top center;
+        bottom: 0px;
+        height: auto; }
+    .popover .bd .content {
+      position: absolute;
+      top: 5px;
+      left: 30px;
+      right: 30px;
+      bottom: 13px;
+      background: #fff;
+      overflow: hidden; }
+  .popover .ft {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-top: 10px;
+    height: 15px;
+    z-index: 100; }
+    .popover .ft .lft {
+      width: 40px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 40px;
+      background: transparent url("/images/popover/grysprite.png") no-repeat 12px -617px; }
+    .popover .ft .pad {
+      position: absolute;
+      top: 0px;
+      height: 40px;
+      background: transparent url("/images/popover/ftpad1x40.png") repeat-x top center; }
+      .popover .ft .pad.lpad {
+        width: auto;
+        left: 40px;
+        right: 40px; }
+      .popover .ft .pad.rpad {
+        width: 0px;
+        right: 40px; }
+    .popover .ft .arr {
+      max-width: 40px;
+      width: 0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 40px;
+      background: transparent url("/images/popover/grysprite.png") no-repeat 0px -562px; }
+    .popover .ft .rt {
+      width: 40px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 60px;
+      background: transparent url("/images/popover/grysprite.png") no-repeat 0px -663px; }
