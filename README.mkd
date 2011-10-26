@@ -31,7 +31,7 @@ There are a couple "global" settings that help you customize your popovers. You 
 
 `padding`: How close to the edge of the window can the popovers get before we move them? Default is `15px`.
 
-`appendTo': What should the popovers be appended to? A jQuery selector. Default is `'body'`.
+`appendTo`: What should the popovers be appended to? A jQuery selector. Default is `'body'`.
 
 `html`: What is the HTML for the popover? I wouldn't change this, but hey...it's up to you. It's got a big default.
 
@@ -62,6 +62,6 @@ On popover reveal we trigger a `popoverReveal` event on the trigger. Similarly, 
 Random Stuff
 ------------
 
-Want something? Please let me know! You can find me at (the gorgon lab)[http://www.thegorgonlab.com]
+Want something? Please let me know! You can find me at [the gorgon lab](http://www.thegorgonlab.com)
 
-Many thanks to (Niels Gabel)[http://nielsbot.com] who helped a lot with the design of these.
+Many thanks to [Niels Gabel](http://nielsbot.com) who helped a lot with the design of these.
