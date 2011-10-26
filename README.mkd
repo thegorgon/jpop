@@ -57,7 +57,7 @@ Ok, fine! There's a couple methods defined to allow you to do this :
 Events
 ------------
 
-On popover reveal we trigger a `popoverReveal` event on the trigger. Similarly, on hide we trigger a `popoverHide`, on remove we trigger `popoverRemove`, on position we trigger `popoverPosition`. For all of these events the attributes `popover`, `content`, and `options` are set as appropriate. For the `resize` event, as no trigger is necessary, we trigger the event on `window`.
+On popover reveal we trigger a `popoverReveal` event on the trigger. Similarly, on hide we trigger a `popoverHide`, on remove we trigger `popoverRemove`, on position we trigger `popoverPosition`. For all of these events the attributes `popover`, `content`, and `options` are set as appropriate. For the resize event, as no trigger is necessary, we trigger the event on `window`.
 
 Random Stuff
 ------------
